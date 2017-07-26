@@ -1,0 +1,30 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+	<style>
+	body{background-color: #404040;}
+	.quoteBox {position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%);text-align: center;vertical-align: center;border: 1px solid gray;border-radius: 3px; width:600px;
+		  min-height: 250px;padding: 5px 15px 5px 15px;background-color: white;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+	.quoteBtn{position:absolute;right:0;bottom:0;margin:5px 15px 15px 15px;}
+	.tweetBtn{position:absolute;left:0;bottom:0;margin:5px 15px 15px 15px;}
+	.tweetLink{text-decoration: none;}
+	</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="quoteBox text-center">
+		<h2><span id="quote"></span></h2><br/>
+		<div id="author"></div>
+		<div>
+			<a class="btn btn-primary tweetBtn" id="tweetLink" href="https://www.twitter.com/" target="_blank" title="Tweet quote"><i class="fa fa-twitter"></i></a>
+			<button class="btn btn-primary quoteBtn" id="quoteBtn" title="Get new quote">New quote</button>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
